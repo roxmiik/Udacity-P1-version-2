@@ -1,0 +1,157 @@
+
+/* Page Styles
+================================ */
+
+/* * {
+    border: 1px solid red !important;
+} */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+body {
+	font: normal 1.2em/1.25 'Alegreya', Georgia, serif;
+	color: #222;
+	background-color: #edeff0;
+	margin: 0;
+}
+
+.logo {
+	font-size: 5em;
+	color: rgb(240, 255, 0);
+	padding: 30px 40px 0px;
+	margin: 0;
+}
+
+.myinfo h1{
+	text-align: center;
+	font: bold 2.441em 'Pathway Gothic One', sans-serif;
+	color: rgb(101, 10, 178);
+	margin: 0 auto 20px;
+}
+
+.myinfo h3 {
+	text-align: center;
+	color: rgb(101, 10, 178);
+	font: bold 1.563em 'Pathway Gothic One', sans-serif;
+	margin-top: 15px;
+}
+
+/* Main Layout
+================================ */
+
+.main-wrapper {
+    margin: 0 auto;
+	width: 100%;
+    max-width: 1200px;
+   
+}
+
+.main-footer {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.main-header {
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid rgb(85, 178, 0);
+	margin-bottom: 20px;
+}
+
+.headerchild1 {
+	flex: 1;
+}
+
+.headerchild2 {
+	flex: 2;
+}
+
+/* .row {
+    width: 100%;																																			
+    margin-bottom: 20px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+
+} */
+
+.img {
+	margin-right: auto;
+	-webkit-align-self: flex-end;
+	align-self: flex-end;
+	
+}
+
+
+h2 {
+	color: #848484
+}
+
+h3 {
+	font-size: 28px;
+}
+	
+	
+
+.headerImage{
+	max-width: 100px;
+	max-height: 100px;
+	
+}
+
+.centerImage{
+	max-width: 1200px;
+	max-height: 350px;
+	width: 100%;
+	background-size: cover;
+	
+	
+}
+
+.bottomLeft{
+	max-width: 300px;
+	max-height: 200px;
+	
+}
+
+.bottomCenter{
+	max-width: 300px;
+	max-height: 200px;
+	
+}
+
+.bottomRight{
+	max-width: 300px;
+	max-height: 200px;
+	
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+/* .col-6 {
+    width: 50%;
+	text-align: right;
+} */
+
+.col-12 {
+    width: 100%;
+}
