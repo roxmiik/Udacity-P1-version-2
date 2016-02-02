@@ -8,26 +8,25 @@
 }
 
 
-/* Media Queries
+/* Media Queries for the Grid
 ================================ */
 
-@media (min-width: 1px) and (max-width: 767px)  {
+@media only screen and (min-width: 1px) and (max-width: 649px)  {
 	.grid > [class^="col-"] {
 		padding-top: 5px;
 		padding-bottom: 5px;
 	}
 }
 
-@media (min-width: 768px) {
-
+@media only screen and (min-width: 650px) {
+	
+	
 	/* Columns
 	================================ */
 
 	.grid > [class^="col-"] {
 		float: left;
 		min-height: 1px;
-		padding-left: 10px;
-		padding-right: 10px;
 		margin-left: 2%;
 	}
 	.grid > [class^="col-"]:first-child {
@@ -83,7 +82,7 @@
 	/* Clearfix
 	================================ */
 
-	.grid-container:after,
+	.grid:after,
 	.group:after {
 	  content: " ";
 	  display: table;
@@ -113,6 +112,24 @@ video {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h5,
+p {
+ margin: 0;
+}
+
+a {
+ text-decoration: none;
+ min-width: 48px;
+ min-height: 48px;
+}
+
+a:hover {
+	color: #49A964;
+}
+
 body {
 	font: normal 1.2em/1.25 'Alegreya', Georgia, serif;
 	color: #222;
@@ -121,24 +138,39 @@ body {
 }
 
 .logo {
-	font-size: 5em;
+	font-size: 4.5em;
 	color: rgb(240, 255, 0);
-	padding: 30px 0 0 0;
+	padding: 15px 0 0 0;
 	margin: 0;
 }
 
 .myinfo h1{
-	text-align: center;
-	font: bold 2.441em 'Pathway Gothic One', sans-serif;
+	font: bold 2em 'Pathway Gothic One', sans-serif;
 	color: rgb(101, 10, 178);
-	margin: 0;
 }
 
-.myinfo h3 {
-	text-align: center;
+.myinfo h5 {
 	color: rgb(101, 10, 178);
-	font: bold 1.563em 'Pathway Gothic One', sans-serif;
-	margin-top: 15px;
+	font: bold 1em 'Pathway Gothic One', sans-serif;
+	padding: 10px 0;
+}
+
+.hero {
+	margin: auto;
+	padding: 10px 0;
+
+}
+
+.mauve {
+	color: rgb(93, 77, 109);
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+h3 {
+	padding: 10px 0 5px;
 }
 
 /* Main Layout
@@ -152,8 +184,10 @@ body {
 }
 
 .main-footer {
-	text-align: center;		
-	padding-top: 5px;
+	font-size: 1.1em;
+	text-align: center;
+	color: rgb(69, 42, 52);	
+	padding-top: 30px;
 	padding-bottom: 5px;
 }
 
@@ -163,14 +197,13 @@ body {
 	-webkit-justify-content: space-between;
 	justify-content: space-between;
 	border-bottom: 2px solid rgb(85, 178, 0);
-	margin-bottom: 20px;
 }
 
 .headerchild1 {
-	flex: 1;
+	flex: 0.5;
 }
 
-.headerchild2 {
+.headerchild2 {		
 	flex: 2;
 }
 
@@ -180,4 +213,21 @@ h2 {
 
 h3 {
 	font-size: 28px;
+}
+
+/* Page Media Queries
+================================ */
+@media only screen and (min-width: 450px) {
+	.myinfo {
+		text-align: right;
+		padding: 15px 0 10px;
+	}
+	
+	.myinfo h1 {
+		font-size: 3em;	
+	}
+	
+	.myinfo h5 {
+		font-size: 1.5em;
+	}
 }
