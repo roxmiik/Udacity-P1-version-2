@@ -3,10 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>My Udacity Project</title>
+	<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
 	<link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Alegreya:400italic,700italic,400,700|Alegreya+SC' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/modernizr-custom.js"></script>
+	 <script>
+    Modernizr.load([
+        {
+          load:
+          "js/picturefill.min.js"
+        }
+    ]);
+    </script>
 </head>
 <body>
 <div class="main-wrapper">
@@ -34,7 +45,7 @@
 		<div class="row">
 			<div class="col">
 			<img src="img/lake_2048.jpg" 
-				 sizes="100vw, (min-width: 650px) calc(33vw/3)"
+				 sizes="100vw, (min-width: 650px) calc(100% - 20px)/3"
                  srcset="img/lake_512.jpg 512w, img/lake_1024.jpg 1024w, img/lake_2048.jpg 2048w"
                  alt="Beautiful mountains"/>
 			<h3 class="uppercase mauve">Photo 1</h3>
@@ -42,7 +53,7 @@
 			</div>
 			<div class="col">
 			<img src="img/island_2048.jpg" 
-				 sizes="100vw, (min-width: 650px) calc(33vw - 2%)/3"
+				 sizes="100vw, (min-width: 650px) calc(100% - 20px)/3"
                  srcset="img/island_512.jpg 512w, img/island_1024.jpg 1024w, img/island_2048.jpg 2048w"
                  alt="Beautiful green lake"/>
 			<h3 class="uppercase mauve">Photo 2</h3>
@@ -50,7 +61,7 @@
 			</div>
 			<div class="col">
 			<img src="img/aurora_2048.jpg" 
-				 sizes="100vw, (min-width: 650px) calc(33vw - 2%)/3"
+				 sizes="100vw, (min-width: 650px) calc(100% - 20px)/3"
                  srcset="img/aurora_512.jpg 512w, img/aurora_1024.jpg 1024w, img/aurora_2048.jpg 2048w"
                  alt="Beautiful aurora"/>
 			<h3 class="uppercase mauve">Photo 3</h3>

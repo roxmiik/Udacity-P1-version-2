@@ -120,12 +120,13 @@ body {
 	flex: 2;
 }
 
-.col {
-	margin-right: 2%;
-}
-
-.col:last-of-type {
-	margin-right: 0;
+.no-flexbox  .headerchild1,
+			.headerchild2 {
+			display: inline-block; 
+			}
+			
+.no-flexbox .headerchild1 {
+	width: 40%;
 }
 
 h2 {
@@ -134,7 +135,6 @@ h2 {
 
 h3 {
 	font-size: 1.25em;
-	padding: 5px 0 0;
 }
 
 
@@ -157,4 +157,20 @@ h3 {
 	.col {
 	flex: 1;
 	}
+	
+	.no-flexbox .col {
+		float: left;
+		width: 33.3%;
+		margin-right: 0;
+	}
+	
+	.col {
+	margin-right: 20px;
+	}
+	
+	.col:last-of-type {
+	margin-right: 0;
+}
+	
+	
 }
